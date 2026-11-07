@@ -1,0 +1,40 @@
+.half-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    @media (min-width: @breaks[tablet]) {
+        flex-direction: row;
+    }
+    .half-panel-image,
+    .half-panel-text {
+        flex: 1 1 50%;
+    }
+    .half-panel-image {
+        display: flex;
+        img {
+            width: 100%;
+            min-height: 280px;
+            object-fit: cover;
+        }
+    }
+    .half-panel-text {
+        .flex-col();
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem;
+        background-color: @color-alternativo;
+        color: @texto-secundario;
+        h2,
+        p {
+            margin: 0;
+        }
+        a {
+            align-self: flex-start;
+            padding: 0.75rem 1rem;
+            background-color: @color-secundario;
+            color: @texto-primario;
+            border-radius: 13px;
+            text-decoration: none;
+        }
+    }
+}

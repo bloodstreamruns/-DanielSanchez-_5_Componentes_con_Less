@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Vite MPA con Less</title>
+    <link rel="stylesheet" href="src/less/style.less" />
+</head>
+
+<body>
+    {{>Header titulo="Tarea"}}
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="https://picsum.photos/id/25/1300/720" media="(min-width:1025px)" />
+                <source srcset="https://picsum.photos/id/25/1024/640" media="(min-width:700px)" />
+                <img src="https://picsum.photos/id/25/367/267" alt="Imagen principal" />
+            </picture>
+            <div class="hero-cta">
+                <h2>Lorem ipsum dolor</h2>
+                <a href="#" class="primary-btn">Sit amet</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Lorem ipsum</h2>
+            <section class="card-holder">
+                <div data-role="card" class="card card-azul">
+                    <div data-role="card-header" class="card-header">
+                        <img src="https://picsum.photos/id/56/320/200" alt="Tarjeta 1" />
+                    </div>
+                    <div data-role="card-body">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                    </div>
+                    <div data-role="card-footer">
+                        <a href="#">Dolor sit amet</a>
+                    </div>
+                </div>
+                <div data-role="card" class="card card-rosado">
+                    <div data-role="card-header" class="card-header">
+                        <img src="https://picsum.photos/id/95/320/200" alt="Tarjeta 2" />
+                    </div>
+                    <div data-role="card-body">
+                        <h3>Consectetur adipisicing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                    </div>
+                    <div data-role="card-footer">
+                        <a href="#">Dolor sit amet</a>
+                    </div>
+                </div>
+                <div data-role="card" class="card card-blanco">
+                    <div data-role="card-header" class="card-header">
+                        <img src="https://picsum.photos/id/64/320/200" alt="Tarjeta 3" />
+                    </div>
+                    <div data-role="card-body">
+                        <h3>Aperiam quod</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                    </div>
+                    <div data-role="card-footer">
+                        <a href="#">Dolor sit amet</a>
+                    </div>
+                </div>
+                <div data-role="card" class="card card-rosado">
+                    <div data-role="card-header" class="card-header">
+                        <img src="https://picsum.photos/id/82/320/200" alt="Tarjeta 4" />
+                    </div>
+                    <div data-role="card-body">
+                        <h3>Voluptates quibusdam</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                    </div>
+                    <div data-role="card-footer">
+                        <a href="#">Dolor sit amet</a>
+                    </div>
+                </div>
+                <div data-role="card" class="card card-azul">
+                    <div data-role="card-header" class="card-header">
+                        <img src="https://picsum.photos/id/50/320/200" alt="Tarjeta 5" />
+                    </div>
+                    <div data-role="card-body">
+                        <h3>Ratione maxime</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem.</p>
+                    </div>
+                    <div data-role="card-footer">
+                        <a href="#">Dolor sit amet</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="half-panel">
+            <div class="half-panel-image">
+                <img src="https://picsum.photos/id/152/960/640" alt="Imagen del panel" />
+            </div>
+            <div class="half-panel-text">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quod rem, voluptates
+                    quibusdam ratione maxime esse dolorem cumque.</p>
+                <a href="#">Consectetur</a>
+            </div>
+        </section>
+    </main>
+    {{>Footer titulo="Elaborada por: Daniel Enrique Sánchez Rodríguez"}}
+</body>
+
+</html>

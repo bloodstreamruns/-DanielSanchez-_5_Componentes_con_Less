@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    align-items: center;
+    background-color: @color-secundario;
+    color: @texto-primario;
+    padding: 0.75rem 1rem;
+    border-bottom: 4px solid @color-alternativo;
+    box-shadow: 0 6px 14px fade(@color-fondo-primario, 35%);
+    transition: box-shadow 0.4s ease;
+
+    &:hover {
+        box-shadow: 0 12px 22px fade(@color-fondo-primario, 45%);
+    }
+
+    .brand-section {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+
+            li {
+                a {
+                    color: @texto-primario;
+                    text-decoration: none;
+                    padding: 0.75rem 1rem;
+                    transition: background-color 0.7s ease;
+
+                    &:hover {
+                        background-color: @color-alternativo;
+                    }
+                }
+            }
+        }
+    }
+}
